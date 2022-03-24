@@ -37,7 +37,6 @@ export class PlayasComponent implements OnInit {
       confirmButtonClass:'btn btn-success',
       cancelButtonClass:'btn btn-danger',
       buttonsStyling:false,
-      reverseButtons:true
     }).then((result)=>{
         if(result.value){
           this.servicioPlaya.delete(playa.id).subscribe(
